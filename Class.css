@@ -1,0 +1,52 @@
+
+                            @import url('https://fonts.cdnfonts.com/css/beautiful-2');
+   
+   body{
+     background-color: rgba(14,113,192,0.921);
+   }             
+.bo{
+  background-color: #04b599;
+  
+}
+.div{
+  background-color: #0ef662da;
+  margin-top:20px;
+  height:90px;
+  text-align: center;
+  border:2px solid black;
+  border-radius:10px;
+  position: relative;
+  left: 0;
+  right: 0;
+  
+}
+p{
+  color: #04b599;
+  float: left;
+  font-family: Courier;
+  font-weight: bold;
+  font-size: 30px;
+}
+.logo{
+  text-align: center;
+  float: right;
+  margin-top: 22px;
+  width: 48px;
+  
+}
+@media only screen and (max-width:600px){
+  p{
+  color: green;
+  float: left;
+  font-family: Courier;
+  font-weight: bold;
+  font-size: 25px;
+}
+.logo{
+  text-align: center;
+  float: right;
+  margin-top: 22px;
+  width: 35px;
+  
+}
+}

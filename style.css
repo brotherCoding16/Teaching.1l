@@ -64,7 +64,7 @@ li
 }
 .ooo{
   align-items: center;
-  width:465px;
+  width:475px;
   border:2px solid black;
   border-radius: 20px;
 }
@@ -196,6 +196,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
 
 .logo1{
   height: 500px;
+  width: 700px;
 }
 
 
@@ -274,7 +275,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
   }
   .ooo{
   align-items: center;
-  width:305px;
+  width:315px;
   border:2px solid black;
 }
   .re{
@@ -304,6 +305,13 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
   border-radius:8px;
   border: 1px solid block;
 box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+#navbar li a:hover{
+    text-decoration: none;
+  /* font-size:22px ; */
+    color: white;
+    font-weight: bold;
+    text-decoration-color: rgb(234, 234, 246);
 }
   .open .mobile-menu{
     display: flex;
@@ -339,7 +347,8 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
     
   }
   .logo1{
-    display:none;
+   width:350px;
+   height: 300px;
   }
   .dr{
     position:static ;

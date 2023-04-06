@@ -1,86 +1,158 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/index.css">
-  <script src="js/index.js"></script>
-  <title>CRICKET TERGET BOARD.html</title>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="Login.css">
 </head>
 <style>
-  div{
-  width: 1238px;
+  body{
+ background-color: #1b0ef6da;
 }
- .d1{
-  background-color: white;
-width:180px;
-height:90px;
-border-radius:0px 50px 50px 0px  ;
-float: left;
+.ee{
+ margin-top: 12px;
 }
-.d2{
+.ere{
+ font-size:69px;
+}
+.container {
+  position: relative;
+  top: 500px;
+	font-family:  sans-serif;
+	border: 4px solid #F07334;
+	width: 70%;
+	height:630px;
+	text-align:  center;
+	margin: auto;
+	border-radius: 10px;
+	background-color:#bfc411da ;
+	padding-bottom: 5px;
 
-width:300px;
- background-color: white;
-height:90px;
-border-radius: 0px  0px;
-float: left;
+}
+.submit{
+ width:158px;
+ height:70px;
+ font-size: 28px;
+ background-color:#76ea23;
+ border-radius:8px;
+}
+.password,.username{
+  color: #fdfdfada;
+background-color:#cf3091;
+border-radius:10px;
+height:43px;
+width: 85%;
+margin-top: 5px;
+}
+.a{
+  text-decoration:none;
+  color:white;
+ padding-left:100px;
+}
+@media only screen and (max-width: 1288px){
+  
+}
+@media only screen and (max-width:600px) {
+.container {
+  top: 20px;
+	font-family:  sans-serif;
+	border: 4px solid #F07334;
+	width: 87%;
+	height:380px;
+	text-align:  center;
+	margin: auto;
+	border-radius: 10px;
+	background-color:#bfc411da ;
+	padding-bottom: 5px;
 
 }
-
- .d3{
-width:180px;
-height:90px;
-background-color: white;
-border-radius:50px  0px   0px 50px ;
-float: left;
+.submit{
+ width:88px;
+ font-size: 18px;
+ height:50px;
+ background-color:#76ea23;
+ border-radius:8px;
 }
- .d4{
-   margin:0 auto;
-width:300px;
-height:90px;
-background-color: black;
-border-radius:50px ;
+.password,.username{
+  color: #fdfdfada;
+background-color:#cf3091;
+border-radius:10px;
+height:33px;
+width: 85%;
 }
- .d5{
-width:137px;
-height:86px;
-background-color: white;
-border-radius:50px  0px   0px 50px ;
-float: left;
-border: 2px solid white;
+.a{
+  text-decoration:none;
+  color:white;
+ padding-left:100px;
 }
- .d6{
-width:30px;
-height:86px;
-background-color: white;
-border-radius:0px  0px   0px 0px ;
-float: left;
-border: 2px solid white;
+.ee{
+ font-size:26;
+}
+.ere{
+ font-size:39px;
+}
 }
 </style>
 <body>
-	<h1>CRICKET TERGET BOARD.html</h1>
-	<div class="div">
-  <div class="d1"></div>
-         <div class="d5">
-           <span class="p">
-    <pre id="st">   </pre>   
-    <pre id="nd">  </pre>   
-  </span>  
+  
+  <br>  <br>  <br> <br>  <br>  <br>
+  <section>
+<div class="container">
+    
+<div class="header">
 
-         </div>
-      <div class="d6">
-         <span class="p">
-    <pre id="home"> </pre>   
-    <pre id="btn">  </pre>   
-  </span>  
-        </div>
-      <div class="dd9"> 
-      
-<pre><small >[</small><small id="ll"></small><small>]</small></pre>
-<pre><small>[</small><small id="loo"></small><small>]</small></pre> 
-      </div>
-      </div>
+ <h1 class="ere">Login To Class</h1>
+ </div>
+
+ <form name="login" onsubmit="return validateForm() ;" method="post">
+
+ <span style="font-size: 21px">Username:</span> <br><input class="username" type="text" name="username"><br><br>
+
+
+ <span style="font-size: 21px">Password:</span> <br><input class="password" type="password" name="password">  <br>  <br> 
+
+ 
+<input type="button" class="submit" value="Log In" name="submit" onclick="validate()"><br><br>
+
+</form>
+</div>
+<div>
+ 
+</div>
+  </section>
+
+<script>
+
+var count= 2;
+
+function validate()
+{
+	var un = document.login.username.value;
+	var pw = document.login.password.value;
+	var valid = false;
+	var usernameArray = ["Vlad", "afiq16"];
+	var passwordArray = ["12345", "13579"];
+	for (var i = 0; i < usernameArray.length; i++)
+ {
+
+	if ((un == usernameArray[i]) && (pw == passwordArray[i]))
+	{
+		valid = true;
+		break;
+	}
+}
+	if (valid)
+	{
+		window.location.href= "Class.html";
+		return false;
+	}
+	else
+	{
+		alert("Incorrect password or username you are now blocked");
+		
+	}
+}
+
+</script>
 </body>
 </html>
+

@@ -275,13 +275,13 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
   }
   .ooo{
   align-items: center;
-  width:315px;
+  width:280px;
   border:2px solid black;
 }
   .re{
   background-color: white;
   height:45px;
-  width: 300px;
+  width: 275px;
   margin-top: 3px;
   text-align: center;
   border-radius:8px;
@@ -299,7 +299,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
   .rye{
   background-color: white;
   height:45px;
-  width: 300px;
+  width: 275px;
   margin-top: 3px;
   text-align: center;
   border-radius:8px;
@@ -347,6 +347,7 @@ box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3)
     
   }
   .logo1{
+    display:none;
    width:350px;
    height: 300px;
   }

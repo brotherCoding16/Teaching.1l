@@ -9,7 +9,7 @@ body{
 }
 .container {
   position: relative;
-  top: 500px;
+  top: 50px;
 	font-family:  sans-serif;
 	border: 4px solid #F07334;
 	width: 70%;
@@ -46,7 +46,7 @@ margin-top: 5px;
 }
 @media only screen and (max-width:600px) {
 .container {
-  top: 20px;
+  top: 15px;
 	font-family:  sans-serif;
 	border: 4px solid #F07334;
 	width: 87%;
